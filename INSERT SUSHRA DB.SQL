@@ -1,4 +1,4 @@
---USERS
+--/*Data for the table USERS */
 insert into users (user_id, first_name, last_name, email, gender, phone_number) values (1, 'Penn', 'Foxten', 'pfoxten0@oaic.gov.au', 'Male', '3365182649');
 insert into users (user_id, first_name, last_name, email, gender, phone_number) values (2, 'Nikolas', 'St. Quentin', 'nstquentin1@ucoz.com', 'Male', '2395064980');
 insert into users (user_id, first_name, last_name, email, gender, phone_number) values (3, 'Nobie', 'Hammerstone', 'nhammerstone2@bandcamp.com', 'Male', '2218546676');
@@ -63,7 +63,7 @@ insert into countries (country_id, country_code, country_name) values ('928', 'o
 insert into countries (country_id, country_code, country_name) values ('929', 'Wh', 'indus');
 insert into countries (country_id, country_code, country_name) values ('930', 'MO', 'Azerbaijan');
 
---cities
+--/*Data for the table cities */
 																	
 insert into cities (city_id, city_name, country_id) values ('1', 'Linköping','901');
 insert into cities (city_id, city_name, country_id) values ('2', 'Nong ', '902');
@@ -96,7 +96,7 @@ insert into cities (city_id, city_name, country_id) values ('28', 'Brodósqui', 
 insert into cities (city_id, city_name, country_id) values ('29', 'Donggaocun', '929');
 insert into cities (city_id, city_name, country_id) values ('30', 'Maştağa', '930');
 
---Places
+--/*Data for the table Places */
 
 insert into places (place_id,address,postal_code,city_id,country_id) values('31', '25331 Sauthoff Court', '58592','1', '901');
 insert into places (place_id,address,postal_code,city_id,country_id) values('51', '89 Gerald Terrace', '45140','2', '902');
@@ -129,7 +129,7 @@ insert into places (place_id,address,postal_code,city_id,country_id) values('32'
 insert into places (place_id,address,postal_code,city_id,country_id) values('18', '70 Muir Drive', null,'29', '929');
 insert into places (place_id,address,postal_code,city_id,country_id) values('73', '7 Roth Hill', null,'30', '930');
 
---Bookings
+--/*Data for the table Bookings */
 insert into bookings (booking_id,place_id, start_date,end_date,number_of_days, price_per_day,user_id) values('101', '31','2021-02-13','2021-02-14','1','2500','1');
 insert into bookings (booking_id,place_id, start_date,end_date,number_of_days, price_per_day,user_id) values('102', '51','2021-03-13','2021-03-17','4','2500','2');
 insert into bookings (booking_id,place_id, start_date,end_date,number_of_days, price_per_day,user_id) values('103', '52','2021-02-13','2021-02-15','2','2500','3');
@@ -161,7 +161,7 @@ insert into bookings (booking_id,place_id, start_date,end_date,number_of_days, p
 insert into bookings (booking_id,place_id, start_date,end_date,number_of_days, price_per_day,user_id) values('129', '18','2021-02-19','2021-02-24','6','2500','26');
 insert into bookings (booking_id,place_id, start_date,end_date,number_of_days, price_per_day,user_id) values('130', '73','2019-08-11','2019-08-15','5','2500','28');
 
---Reviews
+--/*Data for the table REVIEWs */
 Insert into reviews(review_id,rating,booking_id) values('1','8','101');
 Insert into reviews(review_id,rating,booking_id) values('2','0','102');
 Insert into reviews(review_id,rating,booking_id) values('3','7','103');
